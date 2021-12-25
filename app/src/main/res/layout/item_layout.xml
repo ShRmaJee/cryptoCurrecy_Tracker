@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="5dp"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="4dp"
+        app:cardBackgroundColor="@color/shady_black">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:id="@+id/currency_layout"
+                    android:layout_height="wrap_content"
+    android:background="@color/shady_black">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/currency_symb"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="2dp"
+                android:padding="3dp"
+                android:text="symbol"
+                android:textStyle="bold"
+                android:textSize="20sp"
+
+        >
+        </TextView>
+        <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/currency_name"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textStyle="bold"
+                android:layout_margin="2dp"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/currency_symb"
+                android:textSize="15sp"
+        >
+        </TextView>
+        <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/currency_rate"
+                android:layout_height="wrap_content"
+                android:text="rate"
+                android:textStyle="bold"
+                android:layout_margin="2dp"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+        >
+
+        </TextView>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/currency_delta"
+                  android:textStyle="bold"
+                  android:layout_margin="2dp"
+                  android:padding="3dp"
+                  android:text="delta"
+                  android:textColor="@color/green"
+                  android:layout_below="@id/currency_rate"
+                  android:layout_alignParentRight="true"
+                  android:textSize="18sp"
+        >
+
+        </TextView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
