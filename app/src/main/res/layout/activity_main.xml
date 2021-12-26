@@ -1,12 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="?attr/actionBarSize">
+        android:background="@color/shady_black"
+
+>
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@id/icon"
+
+    >
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic__907500_coin_cryptocurrency_ripple_xrp_icon"
+                   android:id="@+id/image"
+                   android:scrollY="-6dp"
+
+        >
+
+        </ImageView>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="CryptoTRACKER"
+                  android:textStyle="bold"
+                  android:textSize="30sp"
+                  android:id="@+id/icon"
+                  android:layout_toRightOf="@id/image"
+                  android:layout_centerInParent="true"
+
+        >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/white"
+              android:id="@+id/search_bar"
+              android:hint="search your currency"
+              android:textColorHint="@color/white"
+              android:layout_margin="4dp"
+              android:textStyle="italic"
+              android:layout_below="@+id/icon"
+    >
+
+    </EditText>
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                               android:layout_height="match_parent"
+                                               android:layout_below="@id/search_bar"
+                                               android:id="@+id/RVcurrencies"
+    >
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</RelativeLayout>
